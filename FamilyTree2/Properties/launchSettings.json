@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FamilyTree": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\Sam\\Documents\\commands.txt"
+    }
+  }
+}
