@@ -1,0 +1,55 @@
+{
+    "database" : "carespo_db",
+    "version" : "1",
+    "encrypted" : false,
+    "mode" : "full",
+    "tables" : [
+        {
+            "name" : "personality_profession",
+            "schema" : [
+                { "column" : "id", "value" : "INTEGER PRIMARY KEY NOT NULL" },
+                { "column" : "profession", "value" : "TEXT NOT NULL" },
+                { "column" : "personality", "value" : "TEXT NOT NULL" },
+                { "column" : "comments", "value" : "TEXT NOT NULL" }
+            ],
+            "values" : [
+                [1, "Doctor", "ESTJ"],
+                [2, "Engineer", "ESTP"]
+            ]
+        },
+        {
+            "name" : "personality_persons",
+            "schema" : [
+                { "column" : "id", "value" : "INTEGER PRIMARY KEY NOT NULL" },
+                { "column" : "person", "value" : "TEXT NOT NULL" },
+                { "column" : "personality", "value" : "TEXT NOT NULL" },
+                { "column" : "about_person", "value" : "TEXT NOT NULL" },
+                { "column" : "pic_url", "value" : "TEXT NULL" },
+                { "column" : "comments", "value" : "TEXT NULL" }
+            ],
+            "values" : [
+                [1, "Mark Zuckerberg", "INTJ", "Facebook"],
+                [2, "Arnold Zuckerberg", "INTJ", "Hollywood"],
+                [3, "Bill Gates", "ENTJ", "Microsoft"]
+            ]
+        },
+        {
+            "name" : "personality_traits",
+            "schema" : [
+                { "column" : "id", "value" : "INTEGER PRIMARY KEY NOT NULL" },
+                { "column" : "personality", "value" : "TEXT NOT NULL" },
+                { "column" : "trait", "value" : "TEXT NOT NULL" }                
+            ],
+            "values" : [
+                [1, "INTJ", "Intellectual"],
+                [2, "INTJ", "Imaginative"],
+                [3, "INTJ", "Strategic"],
+                [4, "INTJ", "Planner"],
+                [5, "ESFP", "The Entertainer"],
+                [6, "ESFP", "Spontaneous"],
+                [7, "ESFP", "Energetic"],
+                [8, "ESFP", "Enthusiastic"]
+            ]
+        }
+    ]
+}
